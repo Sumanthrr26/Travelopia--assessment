@@ -2,7 +2,11 @@
 
 # [Travelopia--assessment]
 
+# [Image - 1]
 ![Project Image](https://github.com/Sumanthrr26/Travelopia--assessment/blob/main/images/Project-img.png)
+
+# [Image - 2]
+![Project Image](https://github.com/Sumanthrr26/Travelopia--assessment/blob/main/images/Project-img2.png)
 
 ## Description
 
