@@ -1,0 +1,276 @@
+* {
+  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Miller Display Bold", serif;
+}
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px;
+  position: relative; /* Add position relative to the body */
+}
+
+#limitedText {
+  font-size: 20px;
+}
+
+#fullText {
+  display: none;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+#showMoreBtn {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  color: rgb(9, 9, 9); /* Set your desired text color */
+  width: 100%; /* Updated to 100% */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+#navbar img {
+  width: 200px;
+  height: auto;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+}
+.menu-icon {
+  cursor: pointer;
+}
+
+.flex-column {
+  flex-direction: column; /* Flex direction for the column layout */
+}
+
+.menu-link {
+  margin: 0 15px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: rgb(91, 106, 106);
+  font-weight: 600;
+  font-size: 20px;
+}
+.phone-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.number-link {
+  margin-right: 15px;
+  text-decoration: none;
+  color: rgb(91, 106, 106);
+}
+
+.call-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fa-search {
+  margin: 0 60px;
+  width: 60px;
+  height: auto;
+  color: rgb(91, 106, 106);
+}
+a:hover {
+  color: rgb(7, 126, 134);
+}
+
+.carousel__title {
+  color: rgb(91, 106, 106);
+}
+span:hover {
+  color: rgb(7, 126, 134);
+}
+.carousel-container {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+/* Custom styles for each item in the carousel */
+.carousel__text {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  box-sizing: border-box;
+
+  text-align: center; /* Border color between items */
+}
+.inside-img-content {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  transform: translate(-20%, 20%);
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-img > img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+.inside-img-content h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.inside-img-description p {
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: center;
+}
+.trip__title {
+  color: rgb(91, 106, 106);
+  font-size: 28px;
+  font-weight: 400;
+}
+aside {
+  display: block;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 0 0 calc(70% - 20px);
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  flex: 0 0 calc(30% - 20px);
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar-phone-numbers {
+  margin: 0;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  --webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #links {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .menu-link {
+    margin: 16px;
+  }
+  .menu-link.active {
+    left: 0;
+  }
+  body {
+    padding: 10px;
+  }
+
+  #navbar {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  #navbar img {
+    width: 150px;
+  }
+
+  .menu-link,
+  .number-link,
+  .call-btn {
+    margin: 10px 0;
+  }
+
+  .carousel-container {
+    flex-direction: column;
+  }
+
+  .carousel__text {
+    text-align: center;
+  }
+
+  .carousel__title {
+    margin-top: 10px;
+  }
+
+  .page-img {
+    text-align: center;
+  }
+
+  .inside-img-content {
+    position: absolute;
+    top: 45%;
+    left: 29%;
+    width: 60%;
+  }
+
+  .trip__title {
+    font-size: 24px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .content,
+  .sidebar {
+    flex: 0 0 calc(100% - 20px);
+    margin: 0;
+  }
+}
