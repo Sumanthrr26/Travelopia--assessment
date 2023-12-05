@@ -2,7 +2,7 @@
 
 # [Travelopia--assessment]
 
-![Project Image](https://drive.google.com/file/d/1mdP_sndyaXq9wypHwnaDu473ltnZJlmK/view?usp=sharing)
+![Project Image](https://github.com/Sumanthrr26/Travelopia--assessment/blob/main/images/Project-img.png)
 
 ## Description
 
