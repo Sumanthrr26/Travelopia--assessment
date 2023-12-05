@@ -57,10 +57,10 @@ bash
 cd [Travelopia--assessment]
 Open the index.html file in your browser or deploy the project to a web server.
 
-2. Usage
+## Usage
 Describe how to use your project, including any dependencies or configurations needed.
 
---Technologies Used
+## Technologies Used
 HTML
 CSS
 JavaScript
