@@ -1,8 +1,8 @@
 # Travelopia--assessment
 
-# [Your Project Name]
+# [Travelopia--assessment]
 
-![Project Image](link-to-your-project-image)
+![Project Image](https://drive.google.com/file/d/1mdP_sndyaXq9wypHwnaDu473ltnZJlmK/view?usp=sharing)
 
 ## Description
 
