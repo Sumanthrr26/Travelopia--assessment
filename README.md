@@ -10,7 +10,7 @@
 
 ## Description
 
-This project is a recreation of the [Exodus Armenia Holidays](https://www.exodus.co.uk/destinations/europe-holidays/armenia-holidays) webpage. It was assigned by Travelopia and implemented using HTML, CSS, and JavaScript. The live version of the project can be viewed [here](https://656f02078498de04b260e1e8--dainty-clafoutis-d21106.netlify.app/).
+This project is a recreation of the [Exodus Armenia Holidays](https://www.exodus.co.uk/destinations/europe-holidays/armenia-holidays) webpage. It was assigned by Travelopia and implemented using HTML, CSS, and JavaScript. The live version of the project can be viewed [here](https://657027d16f560b437dc1af9a--coruscating-rabanadas-25d724.netlify.app/).
 
 ## Table of Contents
 
