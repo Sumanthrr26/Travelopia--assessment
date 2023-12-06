@@ -3,139 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Travelopia Assessment</title>
+    <link rel="stylesheet" href="menu.css" />
+    <title>Travelopia--assessment</title>
   </head>
   <body>
-    <div id="navbar">
-      <div>
-        <img
-          src="data:image/png;base64,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"
-        />
-      </div>
-      <div id="links">
-        <a
-          class="menu-link"
-          href="https://www.exodus.co.uk/holiday-destinations"
-          >Destinations</a
-        >
-        <a
-          class="menu-link"
-          href="https://www.exodus.co.uk/holiday-destinations"
-          >Activities</a
-        >
-        <a
-          class="menu-link"
-          href="https://www.exodus.co.uk/holiday-destinations"
-          >Ways To Offer</a
-        >
-        <a
-          class="menu-link"
-          href="https://www.exodus.co.uk/holiday-destinations"
-          >Late Getaways</a
-        >
-        <a class="menu-link"> Sustainable Travel </a>
-        <i class="fa fa-search" aria-hidden="true"></i>
-        <div class="phone-number">
-          <a class="number-link" href="tel:+442035536240">020 3553 6240</a>
-          <span class="call-btn"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
+    <header>
+      <nav class="links">
+        <a href="#" class="nav-branding"
+          ><img
+            src="data:image/png;base64,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"
+        /></a>
+        <ul class="nav-menu">
+          <li class="link-item">
+            <a
+              class="menu-link"
+              href="https://www.exodus.co.uk/holiday-destinations"
+              >Destinations</a
             >
-              <path
-                fill="rgb(0,168,182)"
-                fill-rule="evenodd"
-                d="M17 0c.55000305 0 1 .4499998 1 1 0 9.39000034-7.61000061 17-17 17-.55000305 0-1-.45000076-1-1v-3.48999977c0-.55000115.44999695-1 1-1 1.2400055 0 2.44999695-.19999886 3.57000732-.57000065.09999085-.03999996.20999146-.04999924.30999756-.04999924.25999451 0 .50999451.09999943.70999146.28999997l2.19999695 2.20000076c2.83000183-1.45000076 5.15000915-3.76000118 6.5900116-6.5900011l-2.20001221-2.19999982c-.27999878-.28000068-.35998536-.67000007-.25-1.02000046C12.30000305 3.44999981 12.5 2.25 12.5 1c0-.5500002.44999695-1 1-1H17zm-3 4.73350906C14.24490356 3.85751963 14.39796448 2.9393139 14.45918274 2H16c-.09184265 1.39313984-.35714722 2.73350906-.7755127 4L14 4.73350906zM2 14.46391678V16c1.3894806-.09278297 2.72631836-.36082458 4-.77319527L4.73684692 14c-.89474487.24742317-1.81053161.40206146-2.73684692.46391678z"
-              ></path>
-            </svg>
-          </span>
+          </li>
+          <li class="link-item">
+            <a
+              class="menu-link"
+              href="https://www.exodus.co.uk/holiday-destinations"
+              >Activities</a
+            >
+          </li>
+          <li class="link-item">
+            <a
+              class="menu-link"
+              href="https://www.exodus.co.uk/holiday-destinations"
+              >Ways To Offer</a
+            >
+          </li>
+          <li class="link-item">
+            <a
+              class="menu-link"
+              href="https://www.exodus.co.uk/holiday-destinations"
+              >Late Getaways</a
+            >
+          </li>
+          <li class="link-item">
+            <a class="menu-link"> Sustainable Travel </a>
+          </li>
+          <li class="link-item phone-item">
+            <div class="phone-number">
+              <a class="number-link" href="tel:+442035536240">020 3553 6240</a>
+              <span class="call-btn"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    fill="rgb(0,168,182)"
+                    fill-rule="evenodd"
+                    d="M17 0c.55000305 0 1 .4499998 1 1 0 9.39000034-7.61000061 17-17 17-.55000305 0-1-.45000076-1-1v-3.48999977c0-.55000115.44999695-1 1-1 1.2400055 0 2.44999695-.19999886 3.57000732-.57000065.09999085-.03999996.20999146-.04999924.30999756-.04999924.25999451 0 .50999451.09999943.70999146.28999997l2.19999695 2.20000076c2.83000183-1.45000076 5.15000915-3.76000118 6.5900116-6.5900011l-2.20001221-2.19999982c-.27999878-.28000068-.35998536-.67000007-.25-1.02000046C12.30000305 3.44999981 12.5 2.25 12.5 1c0-.5500002.44999695-1 1-1H17zm-3 4.73350906C14.24490356 3.85751963 14.39796448 2.9393139 14.45918274 2H16c-.09184265 1.39313984-.35714722 2.73350906-.7755127 4L14 4.73350906zM2 14.46391678V16c1.3894806-.09278297 2.72631836-.36082458 4-.77319527L4.73684692 14c-.89474487.24742317-1.81053161.40206146-2.73684692.46391678z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <hr />
+    <div class="carousel-portion">
+      <div class="carousel-container">
+        <div class="carousel_track_container">
+          <ul class="carousel-track">
+            <li class="carousel_slide">
+              <a
+                href="https://www.exodus.co.uk/review-centre"
+                class="carousel__text"
+                target="_blank"
+              >
+                <img
+                  loading="eager"
+                  width="40"
+                  height="40"
+                  alt="Trustpilot Rated Excellent"
+                  src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_40,h_40,c_lfill,g_auto/exodus-web/2022/05/trustpilot_brandmark_teal-rgb.png"
+                />
+                <span class="carousel__title"
+                  >Trustpilot<br />
+                  Rated Excellent</span
+                >
+              </a>
+            </li>
+            <li class="carousel_slide">
+              <a
+                href="https://www.exodus.co.uk/review-centre"
+                class="carousel__text"
+                target="_blank"
+              >
+                <img
+                  loading="eager"
+                  width="40"
+                  height="40"
+                  alt="Trustpilot Rated Excellent"
+                  src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_40,h_40,c_lfill,g_auto/exodus-web/2023/05/MicrosoftTeams-image-179.png"
+                />
+                <span class="carousel__title"
+                  >REFUND<br />
+                  Gurantee</span
+                >
+              </a>
+            </li>
+            <li class="carousel_slide">
+              <a
+                href="https://www.exodus.co.uk/review-centre"
+                class="carousel__text"
+                target="_blank"
+              >
+                <img
+                  loading="eager"
+                  width="40"
+                  height="40"
+                  alt="Trustpilot Rated Excellent"
+                  src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_40,h_40,c_lfill,g_auto/exodus-web/2023/05/MicrosoftTeams-image-180.png"
+                />
+                <span class="carousel__title"
+                  >Flexible<br />
+                  Bookings</span
+                >
+              </a>
+            </li>
+            <li class="carousel_slide">
+              <a
+                href="https://www.exodus.co.uk/review-centre"
+                class="carousel__text"
+                target="_blank"
+              >
+                <img
+                  loading="eager"
+                  width="40"
+                  height="40"
+                  alt="Trustpilot Rated Excellent"
+                  src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_40,h_40,c_lfill,g_auto/exodus-web/2023/02/leader-icon-usp.png"
+                />
+                <span class="carousel__title"
+                  >Expert Local<br />
+                  Guides</span
+                >
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
     </div>
-    <div class="container mt-4">
-      <div id="myCarousel" class="carousel-container">
-        <a
-          href="https://www.exodus.co.uk/review-centre"
-          class="carousel__text"
-          target="_blank"
-        >
-          <img
-            loading="eager"
-            width="40"
-            height="40"
-            alt="Trustpilot Rated Excellent"
-            src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_40,h_40,c_lfill,g_auto/exodus-web/2022/05/trustpilot_brandmark_teal-rgb.png"
-          />
-          <span class="carousel__title"
-            >Trustpilot<br />
-            Rated Excellent</span
-          >
-        </a>
-        <a
-          href="https://www.exodus.co.uk/review-centre"
-          class="carousel__text"
-          target="_blank"
-        >
-          <img
-            loading="eager"
-            width="40"
-            height="40"
-            alt="Trustpilot Rated Excellent"
-            src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_40,h_40,c_lfill,g_auto/exodus-web/2023/05/MicrosoftTeams-image-179.png"
-          />
-          <span class="carousel__title"
-            >REFUND<br />
-            Guranteed</span
-          >
-        </a>
-        <a
-          href="https://www.exodus.co.uk/review-centre"
-          class="carousel__text"
-          target="_blank"
-        >
-          <img
-            loading="eager"
-            width="40"
-            height="40"
-            alt="Trustpilot Rated Excellent"
-            src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_40,h_40,c_lfill,g_auto/exodus-web/2023/05/MicrosoftTeams-image-180.png"
-          />
-          <span class="carousel__title"
-            >Flexible<br />
-            Booking</span
-          >
-        </a>
-        <a
-          href="https://www.exodus.co.uk/review-centre"
-          class="carousel__text"
-          target="_blank"
-        >
-          <img
-            loading="eager"
-            width="40"
-            height="40"
-            alt="Trustpilot Rated Excellent"
-            src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_40,h_40,c_lfill,g_auto/exodus-web/2022/05/trustpilot_brandmark_teal-rgb.png"
-          />
-          <span class="carousel__title"
-            >Trustpilot<br />
-            Rated Excellent</span
-          >
-        </a>
-      </div>
-    </div>
+    <hr />
     <div class="page-img">
       <img
         src="https://res.cloudinary.com/enchanting/q_80,f_auto,c_lfill,w_360,h_270,g_auto/exodus-web/2022/07/armenia-2.jpg"
@@ -150,9 +172,7 @@
         </div>
       </div>
     </div>
-    <div>
-      <h1 class="trip__title">Armenia Tours</h1>
-    </div>
+
     <div class="container">
       <div class="content">
         <p id="limitedText">
@@ -194,9 +214,6 @@
         </div>
       </aside>
     </div>
-    <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
+<script src="main.js"></script>

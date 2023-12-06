@@ -104,14 +104,13 @@ span:hover {
   justify-content: space-between;
 }
 
-/* Custom styles for each item in the carousel */
 .carousel__text {
   display: flex;
   flex-direction: row;
   padding: 10px;
   box-sizing: border-box;
 
-  text-align: center; /* Border color between items */
+  text-align: center;
 }
 .inside-img-content {
   position: absolute;
@@ -125,6 +124,7 @@ span:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .page-img > img {

@@ -2,7 +2,256 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
 }
 header {
-  background-color: antiquewhite;
+  background-color: white;
+}
+li {
+  list-style: none;
+}
+a {
+  color: rgb(91, 106, 106);
+  text-decoration: none;
+  font-size: 1.18rem;
+  font-weight: 550;
+}
+a:hover {
+  color: rgb(7, 126, 134);
+  text-decoration: underline;
+}
+.nav-branding img {
+  width: 200px;
+}
+.links {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+  margin-right: 100px;
+}
+.menu-link {
+  transition: 0.7s ease;
+}
+.menu-link:hover {
+  color: rgb(7, 126, 134);
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+.phone-number {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.carousel-track {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.carousel_slide {
+  margin-right: 10px;
+}
+
+.carousel__text {
+  display: flex;
+  align-items: center;
+}
+
+.carousel_button {
+  width: 40px;
+  height: 40px;
+}
+
+.carousel_indicator {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+.page-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 270px;
+
+  margin: 0 auto; /* Center the element */
+}
+
+.page-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.inside-img-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.inside-img-content h1 {
+  margin: 0;
+  font-size: 24px; /* Set the desired font size */
+}
+
+.inside-img-description p {
+  margin: 10px 0;
+}
+#limitedText {
+  font-size: 20px;
+}
+
+#fullText {
+  display: none;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+#showMoreBtn {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 550;
+}
+aside {
+  display: block;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 0 0 calc(70% - 20px);
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  flex: 0 0 calc(30% - 20px);
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar-phone-numbers {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin: 15px;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+
+    text-align: center;
+    transition: 0, 3s;
+  }
+  .link-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+    top: 20%;
+    z-index: 1000;
+  }
+  .phone-number {
+    display: none;
+  }
+  a:hover {
+    color: rgb(7, 126, 134);
+    text-decoration: underline;
+  }
+  .nav-branding {
+    width: 30%;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+  }
+
+  .carousel-track {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .carousel_slide {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+  }
+  #limitedText {
+    margin-top: 10px;
+    font-size: 17px;
+    width: 100%;
+    overflow: hidden;
+  }
+  #showMoreBtn {
+    font-size: 16px;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .content,
+  .sidebar {
+    flex: 0 0 calc(100% - 20px);
+    margin: 0;
+  }
+
+  .inside-img-content {
+    width: 90%;
+    height: 50%;
+  }
 }
