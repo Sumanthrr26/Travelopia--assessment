@@ -237,6 +237,9 @@ aside {
     width: 100%;
     overflow: hidden;
   }
+  #fullText {
+    font-size: 17px;
+  }
   #showMoreBtn {
     font-size: 16px;
   }
